@@ -66,7 +66,7 @@
       
       <i class="fas fa-image" style="zoom: 0.6;"></i>
       
-      <span>相册</span>
+      <span>作品</span>
     </a>
     
   </li>
@@ -125,7 +125,7 @@
 			
 			    <i class="fa-fw fas fa-image"></i>
 			
-			相册
+			作品
 		</a>
           
         </li>
@@ -153,9 +153,7 @@
 
 </header>
 
-    <link rel="stylesheet" href="/css/gallery.css">
-
-<div class="bg-cover pd-header about-cover">
+    <div class="bg-cover pd-header about-cover">
     <div class="container">
     <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
@@ -196,11 +194,64 @@
 </div>
 
 <main class="content">
-    <div class="container">
-        
+    <div id="galleries" class="container chip-container">
+        <div class="card">
+            <div class="card-content">
+                <div class="tag-title center-align">
+                    <i class="fas fa-1"></i>&nbsp;&nbsp;作品集
+                </div>
+
+                
+                <div id="myGallery" class="my-gallery">
+                    <div class="title center-align" data-aos="zoom-in-up">
+                        <i class="far fa-image"></i>&nbsp;&nbsp;页面
+                    </div>
+                    <div class="row">
+                        
+                        
+                        <div class="photo col s12 m6 l4" data-aos="fade-up">
+                            <div class="img-item" data-src="/medias/featureimages/0.jpg">
+                                <img src="/medias/featureimages/0.jpg" class="responsive-img">
+                            </div>
+                        </div>
+                        
+                        <div class="photo col s12 m6 l4" data-aos="fade-up">
+                            <div class="img-item" data-src="/medias/featureimages/1.jpg">
+                                <img src="/medias/featureimages/1.jpg" class="responsive-img">
+                            </div>
+                        </div>
+                        
+                        <div class="photo col s12 m6 l4" data-aos="fade-up">
+                            <div class="img-item" data-src="/medias/featureimages/2.jpg">
+                                <img src="/medias/featureimages/2.jpg" class="responsive-img">
+                            </div>
+                        </div>
+                        
+                        <div class="photo col s12 m6 l4" data-aos="fade-up">
+                            <div class="img-item" data-src="/medias/featureimages/3.jpg">
+                                <img src="/medias/featureimages/3.jpg" class="responsive-img">
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+                <script>
+                    $(function () {
+                        let animateClass = 'animated pulse';
+                        $('#myGallery .photo').hover(function () {
+                            $(this).addClass(animateClass);
+                        }, function () {
+                            $(this).removeClass(animateClass);
+                        });
+                    });
+                </script>
+                
+            </div>
+        </div>
     </div>
 </main>
-
 
 
     <footer class="page-footer bg-color">
