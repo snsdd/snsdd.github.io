@@ -1816,9 +1816,10 @@ thead {
 
 .my-gallery .photo img {
     width: 100%;
-    height: 200px;
+    max-width: 1040px;
+    margin: 0 auto;
+    text-align: center;
     border-radius: 10px;
-    cursor: pointer;
 }
 
 /*尾部样式*/
