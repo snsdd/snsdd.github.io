@@ -100,7 +100,7 @@ $(function () {
                 this.insertAdjacentElement('afterend', captionDiv)
             }
         });
-        $('#articleContent, #myGallery').lightGallery({
+        $('#articleContent, #myGallery, #myGallery2, #myGallery3').lightGallery({
             selector: '.img-item',
             // 启用字幕
             subHtmlSelectorRelative: true

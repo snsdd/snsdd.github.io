@@ -314,6 +314,17 @@
                         
                     </div>
                 </div>
+                
+                <script>
+                    $(function () {
+                        let animateClass = 'animated pulse';
+                        $('#myGallery .photo').hover(function () {
+                            $(this).addClass(animateClass);
+                        }, function () {
+                            $(this).removeClass(animateClass);
+                        });
+                    });
+                </script>
 
                 
                 <div id="myGallery2" class="my-gallery">
@@ -386,6 +397,17 @@
                         
                     </div>
                 </div>
+
+                <script>
+                    $(function () {
+                        let animateClass = 'animated pulse';
+                        $('#myGallery2 .photo').hover(function () {
+                            $(this).addClass(animateClass);
+                        }, function () {
+                            $(this).removeClass(animateClass);
+                        });
+                    });
+                </script>
                 
                 
                 <div id="myGallery3" class="my-gallery">
@@ -432,13 +454,14 @@
                 <script>
                     $(function () {
                         let animateClass = 'animated pulse';
-                        $('#myGallery .photo').hover(function () {
+                        $('#myGallery3 .photo').hover(function () {
                             $(this).addClass(animateClass);
                         }, function () {
                             $(this).removeClass(animateClass);
                         });
                     });
                 </script>
+                
 
             </div>
         </div>
